@@ -415,7 +415,7 @@ margin-bottom:0.5rem;
 
 .product-card {
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 0rem 0rem 1rem 0rem;
     text-align: center;
     transition: box-shadow 0.3s ease;
     border-radius:32px;
