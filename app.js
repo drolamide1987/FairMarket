@@ -176,6 +176,7 @@ contactForm.addEventListener('submit', (e) => {
     const message = contactForm.elements[2].value;
     // Add contact form submission logic here
     console.log('Contact:', name, email, message);
+    
    ***  // Simulate successful contact submission with feedback to the user
     setTimeout(() => {
         alert('Message sent successfully!');
