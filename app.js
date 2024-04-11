@@ -153,8 +153,20 @@ loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = loginForm.elements[0].value;
     const password = loginForm.elements[1].value;
+
+  ***  // Basic Validation 
+    if (!email || !password) {
+        alert('please fill in all fields.');
+        return; ***
+    }
     // Add login logic here
     console.log('Login:', email, password);
+
+    *** // Simulate successful login with feedback to the user
+    setTimeout(() => {
+        alert('Login successful!');
+        loginModal.style.display = 'none'; // Close the modal after successful login
+    }, 1000); ***
 });
 
 contactForm.addEventListener('submit', (e) => {
@@ -164,4 +176,9 @@ contactForm.addEventListener('submit', (e) => {
     const message = contactForm.elements[2].value;
     // Add contact form submission logic here
     console.log('Contact:', name, email, message);
+   ***  // Simulate successful contact submission with feedback to the user
+    setTimeout(() => {
+        alert('Message sent successfully!');
+        contactModal.style.display = 'none'; // Close the modal after successful submission
+    }, 1000); ***
 });
