@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fair Market</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body class="innerContainer">
-    <header>
+    <!-- <header>
         <nav class="innerContainer navWrapper">
             <div class="logo">
                 <div class="logoLink">
@@ -31,14 +31,20 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
             </div>
         </nav>
         
-    </header>
-    <!-- <header>
-        <nav>
-            <div class="logo">Fair Market</div>
+    </header> -->
+    <header>
+        <nav class="innerContainer navWrapper">
+            <div class="logo">
+                <div class="logoLink">
+                    <a href="#"><img src="../assets/Logopng.png" ></a>
+                </div>
+                <div class="logoText">Fair Market</div> 
+            </div>
             <div class="nav-links">
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle" id="helpDropdown">
-                        <i class="fa fa-question-circle"></i> Help <i class="fa fa-caret-down"></i>
+                        <!-- <i class="fa fa-question-circle" ></i> Help <i class="fa fa-caret-down"></i> -->
+                        <i class="fa-regular fa-circle-question"></i> Help <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="helpDropdown">
                         <a class="dropdown-item" href="#">FAQs</a>
@@ -48,7 +54,7 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                 </div>
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle" id="accountDropdown">
-                        <i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i>
+                        <i class="fa-regular fa-user"></i> Account <i class="fa-solid fa-angle-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="accountDropdown">
                         <a class="dropdown-item" href="#">Login</a>
@@ -57,11 +63,13 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                         <a class="dropdown-item" href="#">My Profile</a>
                     </div>
                 </div>
-                <a href="#">Sell</a>
+                <button class="sellBtn">
+                    Sell
+                </button>
             </div>
         </nav>
       
-    </header> -->
+    </header>
    
 
 
@@ -166,12 +174,12 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
             </div> -->
 
             <div class="product-list">
-                <div class="product-card">
+<!--                 <div class="product-card">
                     <img src="../assets/Wrist-watch.svg" alt="Product Image">
                     <h3 class="product-name">Product Name</h3>
                     <p class="product-price">Price: $9</p>
                     <button class="add-to-cart">Add to Cart</button>
-                </div>
+                </div> -->
                 
                 <!-- Add more product cards here -->
             </div>
@@ -280,6 +288,6 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         </div>
     </footer>
 
-    <script src="../javascript/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
