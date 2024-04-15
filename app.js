@@ -2,69 +2,81 @@
 const productList = document.querySelector ('.product-list');
 
 // Sample product data
-const products = [
+/*const products = [
     {
         name: 'Jebra Ear Pod',
         price: 15000,
-        image: '../assets/jebra.svg'
+        image: '../assets/jebra.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Binatone Electrical Fan',
         price: 20000,
-        image: '../assets/Electrical Fan.svg'
+        image: '../assets/Electrical Fan.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Apple Airpods',
         price: 50000,
-        image: '../assets/Airpods.svg'
+        image: '../assets/Airpods.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Calvin Klein Wristwatch',
         price: 80000,
-        image: '../assets/Wrist-watch.svg'
+        image: '../assets/Wrist-watch.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Hardcover Book',
         price: 3000,
-        image: '../assets/Hardcover Book.svg'
+        image: '../assets/Hardcover Book.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Nike Sneaker',
         price: 35000,
-        image: '../assets/Sneaker.svg'
+        image: '../assets/Sneaker.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'HP Laptop',
         price: 500000,
-        image: '../assets/Laptop.svg'
+        image: '../assets/Laptop.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'JBL Headset',
         price: 20000,
-        image: '../assets/Headset.jpg'
+        image: '../assets/Headset.jpg',
+        productCategory:'Electronics'
     },
     {
         name: 'Gucci Sweater',
         price: 55000,
-        image: '../assets/Sweater.svg'
+        image: '../assets/Sweater.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Makeup Brush',
         price: 2000,
-        image: '../assets/Makeup brush.svg'
+        image: '../assets/Makeup brush.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'Beats Headset',
         price: 80000,
-        image: '../assets/White Headset.svg'
+        image: '../assets/White Headset.svg',
+        productCategory:'Electronics'
     },
     {
         name: 'LG Refrigerator',
         price: 350000,
-        image: '../assets/Refrigerator.svg'
+        image: '../assets/Refrigerator.svg',
+        productCategory:'Electronics'
     },
         // Add more products here
-];
+];*/
 
 // Function to create a product card element
 function createProductCard(product) {
@@ -72,6 +84,7 @@ function createProductCard(product) {
     card.classList.add('product-card');
     card.innerHTML = `
         <img src="${product.image}" alt="${product.name}">
+        <p class="productCategory">${product.productCategory}</p>
         <h3 class="product-name">${product.name}</h3>
         <p class="product-price">₦${product.price}</p>
         <button class="add-to-cart">Add to Cart</button>
@@ -147,26 +160,26 @@ closeButtons.forEach(btn => {
         contactModal.style.display = 'none';
     });
 });
-
-// Handle form submissions
+/*
+Handle form submissions
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = loginForm.elements[0].value;
     const password = loginForm.elements[1].value;
 
-  ***  // Basic Validation 
+   Basic Validation 
     if (!email || !password) {
         alert('please fill in all fields.');
-        return; ***
+        return; 
     }
-    // Add login logic here
+    Add login logic here
     console.log('Login:', email, password);
 
-    *** // Simulate successful login with feedback to the user
+     Simulate successful login with feedback to the user
     setTimeout(() => {
         alert('Login successful!');
         loginModal.style.display = 'none'; // Close the modal after successful login
-    }, 1000); ***
+    }, 1000); 
 });
 
 contactForm.addEventListener('submit', (e) => {
@@ -174,12 +187,12 @@ contactForm.addEventListener('submit', (e) => {
     const name = contactForm.elements[0].value;
     const email = contactForm.elements[1].value;
     const message = contactForm.elements[2].value;
-    // Add contact form submission logic here
+    Add contact form submission logic here
     console.log('Contact:', name, email, message);
     
-   ***  // Simulate successful contact submission with feedback to the user
+     Simulate successful contact submission with feedback to the user
     setTimeout(() => {
         alert('Message sent successfully!');
         contactModal.style.display = 'none'; // Close the modal after successful submission
-    }, 1000); ***
-});
+    }, 1000);
+});*/

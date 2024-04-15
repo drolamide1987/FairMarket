@@ -10,28 +10,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet"
 href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body class="innerContainer">
-    <!-- <header>
-        <nav class="innerContainer navWrapper">
-            <div class="logo">
-                <div class="logoLink">
-                    <a href="#"><img src="../assets/Logopng.png" ></a>
-                </div>
-                <div class="logoText">Fair Market</div> 
-            </div>
-            <div class="nav-links">
-                <a href="#">Help</a>
-                <a href="#">Account</a>
-                <a href="#">Sell</a>
-            </div>
-        </nav>
-        
-    </header> -->
     <header>
         <nav class="innerContainer navWrapper">
             <div class="logo">
@@ -43,8 +31,7 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
             <div class="nav-links">
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle" id="helpDropdown">
-                        <!-- <i class="fa fa-question-circle" ></i> Help <i class="fa fa-caret-down"></i> -->
-                        <i class="fa-regular fa-circle-question"></i> Help <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-regular fa-circle-question"></i> Help <i class="fa-solid fa-angle-down" id="otheriToggle"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="helpDropdown">
                         <a class="dropdown-item" href="#">FAQs</a>
@@ -54,7 +41,7 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                 </div>
                 <div class="dropdown">
                     <a href="#" class="dropdown-toggle" id="accountDropdown">
-                        <i class="fa-regular fa-user"></i> Account <i class="fa-solid fa-angle-down"></i>
+                        <i class="fa-regular fa-user"></i> Account <i class="fa-solid fa-angle-down" id="otheriToggle"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="accountDropdown">
                         <a class="dropdown-item" href="#">Login</a>
@@ -74,7 +61,7 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
 
     <div class="search-bar-container">
-        <p class="tagline">What you order is what you get!</p>
+        <h5 class="tagline">What you order is what you get!</h5>
         <div class="search-input">
             <input type="text" placeholder="I am shopping for...">
             <i class="fa fa-search"></i>
@@ -94,8 +81,8 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                 <li><a><span>Books & Media</span></a></li>
                 <li><a><span>Sports & Outdoor</span></a></li>
                 <li><a><span>Baby & Kids</span></a></li>
-                <li><a><span>Jewelry & Watches</span></a></li>
-                <li><a><span>Home & Furniture</span></a></li>
+                <li><a><span>Jewelries & Watches</span></a></li>
+                <li><a><span>₦Home & Furniture</span></a></li>
                 <!-- Add more categories here -->
             </ul>
            </div>
@@ -126,7 +113,7 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                     <div class="promoText">
                         <h2 >Get the same</h2>
                         <h5>Product Quality</h5>
-                        <p>when you buy from Fairmarket</p>
+                        <p>when you buy from<br> Fairmarket</p>
                     </div>
                     <div class="nextSlide">
                         <a href="#" class="next"><i class='bx bxs-chevron-right'></i></a>
@@ -154,15 +141,169 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
            <div class="top">
             <h4>Top Product</h4>
            </div>
-            <!-- <div class="product-list">
+            <div class="product-list">
+                <div class="product-card">
+                    <div><img src="../assets/jebra.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Phone Accessories</p>
+                            <h6 class="product-name">Jebra Airpod</h6>
+                            <p class="product-price">₦15,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Electrical Fan.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Electronics</p>
+                            <h6 class="product-name">Binatone Electrical Fan</h6>
+                            <p class="product-price">₦20,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Airpods.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Phone Accessories</p>
+                            <h6 class="product-name">Apple Airpod</h6>
+                            <p class="product-price">₦50,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
                 <div class="product-card">
                     <div><img src="../assets/Wrist-watch.svg" alt="Product Image"></div>
                     <div class="productcardDetails">
                         <a class="bookMark"><i class='bx bx-bookmark'></i></a>
                         <div class="detail">
-                            <p class="product-category">Electronics</p>
-                            <h6 class="product-name">Product Name</h6>
-                            <p class="product-price">$99.99</p>
+                            <p class="productCategory">Jewelries & Watches</p>
+                            <h6 class="product-name">Calvin Klein Wristwatch</h6>
+                            <p class="product-price">₦80,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Hardcover Book.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Books & Media</p>
+                            <h6 class="product-name">Hardcover Book</h6>
+                            <p class="product-price">₦3,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Sneaker.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Sports & Outdoor</p>
+                            <h6 class="product-name">Nike Sneaker</h6>
+                            <p class="product-price">₦35,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Laptop.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Computers</p>
+                            <h6 class="product-name">HP Laptop</h6>
+                            <p class="product-price">₦500,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Headset.jpg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Phone Accessories</p>
+                            <h6 class="product-name">JBL Headset</h6>
+                            <p class="product-price">₦20,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Sweater.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Fashion</p>
+                            <h6 class="product-name">Gucci Sweater</h6>
+                            <p class="product-price">₦55,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Makeup brush.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Fashion</p>
+                            <h6 class="product-name">Makeup Brush</h6>
+                            <p class="product-price">₦2,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/White Headset.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Phone Accessories</p>
+                            <h6 class="product-name">Beats Headset</h6>
+                            <p class="product-price">₦80,000</p>
+                        </div>
+                       
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div><img src="../assets/Refrigerator.svg" alt="Product Image"></div>
+                    <div class="productcardDetails">
+                        <a class="bookMark"><i class='bx bx-bookmark'></i></a>
+                        <div class="detail">
+                            <p class="productCategory">Electronics</p>
+                            <h6 class="product-name">LG Refrigerator</h6>
+                            <p class="product-price">₦350,000</p>
                         </div>
                        
                         
@@ -170,16 +311,18 @@ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                     </div>
                 </div>
                 
-                Add more product cards here
-            </div> -->
+                <!-- Add more product cards here -->
+            </div>
 
             <div class="product-list">
-<!--                 <div class="product-card">
-                    <img src="../assets/Wrist-watch.svg" alt="Product Image">
-                    <h3 class="product-name">Product Name</h3>
-                    <p class="product-price">Price: $9</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div> -->
+                <!-- <div class="product-card"> -->
+                    <!-- <img src="../assets/Wrist-watch.svg" alt="Product Image"> -->
+                    <!-- <a class="bookMark"><i class='bx bx-bookmark'></i></a> -->
+                    <!-- <p class="productCategory">Electronics</p> -->
+                    <!-- <h3 class="product-name">Product Name</h3> -->
+                    <!-- <p class="product-price">Price: $9</p> -->
+                    <!-- <button class="add-to-cart">Add to Cart</button> -->
+                <!-- </div> -->
                 
                 <!-- Add more product cards here -->
             </div>
